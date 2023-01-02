@@ -20,3 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::resource('mentors', App\Http\Controllers\MentorController::class);
+
+
+Route::resource('siswas', App\Http\Controllers\SiswaController::class);
+
+
+Route::resource('programs', App\Http\Controllers\ProgramController::class);
